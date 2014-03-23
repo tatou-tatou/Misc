@@ -54,9 +54,6 @@
 #main-window .tabbrowser-tab[pinned]:not([selected]) {
 	background-color: #201F1D !important;
 }
-#main-window .tabbrowser-tab[pinned] .tab-icon-image {
-	display:
-}
 
 #main-window #navigator-toolbox[tabsontop="true"] {
 border-style: none !important;
