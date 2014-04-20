@@ -1,108 +1,103 @@
-/*body:before {
-	content: "";
-	position: fixed;
-	top: -10px;
-	left: 0;
-	width: 100%;
-	height: 10px;
-	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,.8);
-	z-index: 100;
-}*/
-
 body {
-/*background-color: #403939;*/
-background-image: url(images/washi_recolor.png);
-background-repeat: repeat;
-/*background: url(images/rustle.jpg) no-repeat center;
-background-position: 50% 0%;*/
-text-align: center;
-font-family: Moon Flower;
-font-size: 18px;
-color: #606060;
+	background-color: #C2AD9D;
+	background-image: url(images/washi_recolor.png);
+	background-repeat: repeat;
+	text-align: center;
+	font-family: "Cheeky Rabbit";
+	font-size: 14pt;
+	color: #606060;
+
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: table;
+	margin: 0;
+}
+
+#container {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #titre {
-font-family: Cheeky Rabbit;
-/*font-family: Antipasto;*/
-font-size: 60px;
-/*font-weight: bold;*/
-/*letter-spacing: -2px;*/
-color: #A7341B;
-/*color: #62712C;*/
-margin: 10% 0 0 0;
-text-shadow:
-/*    -1px -1px 0 rgba(0,0,0,0.1),*/
-    1px -1px 0 rgba(0,0,0,0.3),
-/*    -1px 1px 0 rgba(0,0,0,0.1),*/
-    1px 1px 0 rgba(0,0,0,0.3);
+	font-family: Cheeky Rabbit;
+	font-size: 4em;
+	letter-spacing: -2px;
+	color: #A7341B;
+	text-shadow:
+	    1px -1px 0 rgba(0,0,0,0.3),
+	    1px 1px 0 rgba(0,0,0,0.3);
 }
 
-/*#titre:after {
-	content: "o";
-	font-family: Cheeky Rabbit;
-}*/
-
 #sous-titre {
-color: #000;
-/*color: #DED0B4;*/
-font-family: Moon Flower;
-font-size: 1.5em;
-text-shadow:
-/*    -1px -1px 0 rgba(0,0,0,0.1),*/
-    1px -1px 0 rgba(0,0,0,0.3),
-/*    -1px 1px 0 rgba(0,0,0,0.1),*/
-    1px 1px 0 rgba(0,0,0,0.3);
+	color: #201F1D;
+	font-family: "Cirno";
+	font-weight: normal;
+	font-size: 2.3em;
+	text-shadow:
+	    1px -1px 0 rgba(0,0,0,0.3),
+	    1px 1px 0 rgba(0,0,0,0.3);
 }
 
 #rectangleblanc {
-display: table;
-background-color: #FAFAFA;
-background-image: url(images/ricepaper_v3.png);
-background-repeat: repeat;
-width: 100%;
+	display: table;
+	background-color: #EEE;
+	background-image: url(images/ricepaper_v3.png);
+	background-repeat: repeat;
+	width: 95%;
 
-border-style: solid;
-border-color: #555;
-border-width: 1px;
-/*border-radius: 5px;*/
-border-radius: 0px;
-padding-top: 10px;
-padding-bottom: 10px;
+	border-style: solid;
+	border-color: #2F2F2F;
+	border-width: 3px;
+	border-radius: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
-/*box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5);*/
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	margin-bottom: 10em;
 
-    }
+	font-family: Cirno;
+	font-size: 1em;
+	font-weight: bold;
+}
 
 strong {
 	color:#A7341B;
 }
 hr {
-width: 30%;
-/*margin-top:10px;*/
-margin-bottom:10px;
-}
-#retour a:link, #retour a:visited {
-/*color:#A7341B;*/
-}
-#container {
-margin: 2.5% 2.5% 2.5% 2.5%;
+	width: 30%;
+	margin-bottom:10px;
 }
 
 #image {
-margin: 0px 0px 5px 0px;
+	margin: 0px 0px 5px 0px;
 }
 
 .liens {
-margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#all_links {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
 }
 
 #recherche {
-margin: 5px 0px 0px 0px;
+	margin: 5px 0px 0px 0px;
 }
+
 input{
-font-family: MonteCarlo;
-font-size:11px;
-color: #555555;
+	font-family: Sans-serif;
+	font-size:0.9em;
+	color: #555555;
+	border-style: solid;
+	border-color: #D9D9D9;
+	background-color: #EEE;
 }
 
 a:link {
