@@ -1,0 +1,153 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/*#content browser {
+    margin-right: -15px !important;
+	overflow-y: scroll !important;
+}*/
+
+.tabbrowser-tab:not([pinned]) .tab-icon-image, .tab-throbber,
+#tabbrowser-tabs .scrollbutton-up,
+#tabbrowser-tabs .scrollbutton-down,
+.tab-close-button,
+#appmenu-toolbar-button {
+	display: none !important;
+}
+
+.tab-text {
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#main-window #tabbrowser-tabs tab[fadein]:not([pinned]) {
+	min-width: 10px !important;
+	/*max-width: 280px !important;*/
+	max-width: 100% !important;
+}
+
+#TabsToolbar {
+	box-shadow: none !important;
+}
+
+#main-window .tabbrowser-tab {
+	border: 0 !important;
+	border-width: 0px 3px 1px 3px !important;
+	border-style: none !important;
+    border-color: #201F1D !important;
+	background: 0 !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+	background-color: #201F1D !important;
+	color: #DED0B4 !important;
+	box-shadow: none !important;
+}
+#main-window .tabbrowser-tab[selected] {
+	border-radius: 0 !important;
+	background-color: #A73E28 !important;
+    border-color: #A73E28 !important;
+    border-right-width: 3px !important;
+    border-left-width: 3px !important;
+	color: #EDDEC9 !important;
+	box-shadow: none !important;
+}
+#main-window .tabbrowser-tab[pinned]:not([selected]) {
+	background-color: #201F1D !important;
+}
+
+#main-window #navigator-toolbox[tabsontop="true"] {
+border-style: none !important;
+}
+
+.toolbarbutton-menu-dropmarker {
+display: none;
+}
+
+#main-window .toolbar-primary .tabbrowser-tabs {
+    border-bottom: solid !important;
+    border-bottom-width: 0px !important;
+    border-bottom-color: #201F1D !important;
+    border-top: solid !important;
+    border-top-width: 0px !important;
+    border-top-color: #201F1D !important;
+}
+
+
+
+/* AUSTRALIS */
+.tab-background {
+background-image: none !important;
+border: none !important;
+margin: 0 !important;
+}
+
+#TabsToolbar:not(:-moz-lwtheme)::before {
+display: none !important;
+}
+
+.tab-background-start, .tab-background-end {
+visibility: hidden !important;
+box-shadow: none !important;
+}
+
+.arrowscrollbox-scrollbox, .scrollbutton-down, .scrollbutton-up {
+	padding: 0 !important;
+	border-right: 0 !important;
+}
+
+
+.tab-background-middle {
+background: none !important;
+}
+
+#TabsToolbar, #TabsToolbar *{
+clip-path: none !important;
+max-height: 42px !important;
+}
+
+#TabsToolbar, .tabbrowser-tab *, .tabs-newtab-button, .toolbarbutton, .tab-background *{
+background-image: none !important;
+}
+
+.tab-background,
+.tab-background-middle,
+.tabbrowser-tab:before,
+.tabbrowser-tab:after {
+box-shadow: none !important;
+background: none !important;
+}
+
+.tab-background-start,
+.tab-background-end {
+width: 0 !important;
+opacity: 0 !important;
+}
+
+.tab-background-middle {
+	border-left-width: 0 !important;
+	border-right-width: 0 !important;
+	margin-right: 0px !important; /* With the two lines below, will prevent from switching tab when clicking on the side of one */
+	margin-left: 0px !important;
+}
+
+#alltabs-button, .tabs-newtab-button {
+	display: none !important;
+}
+
+#navigator-toolbox::after {
+  content: "";
+  display: -moz-box;
+  -moz-box-ordinal-group: 101; /* tabs toolbar is 100 */
+  height: 0px;
+  background-color: transparent;
+}
+
+#TabsToolbar::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  border-bottom: 0px solid hsla(0,0%,0%,.3);
+}
