@@ -1,8 +1,19 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
+/*
+ * Use it with vimperator or pentadactyl, else it will be unusable.
+ *
+ * I use pentadactyl to hide the nav bar and the vertical and horizontal scrollbars, but you can do it with CSS.
+ *
+ */
+
 @-moz-document url(chrome://browser/content/browser.xul) {
     /* TABS */
     .tabbrowser-tab[fadein]:not([pinned]) { min-width: 30px !important; max-width: 100% !important; }
+    #tabbrowser-tabs {
+        min-height: 25px !important;
+        max-height: 25px !important;
+    }
     tab {
         color: #DED0B4 !important;
         text-shadow: none !important;
@@ -17,7 +28,7 @@
     .tab-close-button,
     .tab-close,
     .tab-throbber, 
-    .tab-icon-image,
+    .tabbrowser-tab:not([pinned]) .tab-icon-image,
     .tab-background-start,
     .tab-background-end {
         display: none !important; }
@@ -65,12 +76,6 @@
     #navigator-toolbox::after {
         height: 0px;
     }
-
-    /* HIDE ORANGE MENU BUTTON */
-    #appmenu-toolbar-button, #appmenu-button-container { display: none !important; }
-    
-    /* HIDE STATUS BAR */
-    #status-bar, #statusbar-display, statuspanel { display: none !important; }
 
     /* PRIVATE BROWSING FIX */
     #main-window[privatebrowsingmode=temporary] #TabsToolbar::before { display: none !important; }
